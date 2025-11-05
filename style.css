@@ -29,6 +29,7 @@ nav ul {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    position: relative;
 }
 
 nav ul li a {
@@ -59,14 +60,19 @@ nav ul li a.signin-link {
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: all 0.2s ease;
     border: none;
     font-size: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: none;
 }
 
 nav ul li a.signin-link:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
 }
 
 nav ul li a.signin-link.active {
